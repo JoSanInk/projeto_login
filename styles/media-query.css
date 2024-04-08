@@ -41,13 +41,23 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) {
+
     /* desktop */
+    section {
+        flex-direction: row;
+        width: 50vw;
+        height: fit-content;
+    }
 
-    
-}
+    div#image {
+        flex: 1;
+        width: 30vw;
+        border-radius: 20px 0px 0px 20px;
+    }
 
-@media screen and (min-width: 1200px) {
-    /* telas grandes */
-
+    div#iform {
+        flex: 2;
+        border-radius: 0px 20px 20px 0px;
+    }
 }

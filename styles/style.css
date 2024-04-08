@@ -34,8 +34,8 @@ section {
     flex-direction: column;
     width: 60vw;
     height: 80dvh;
-
-
+    box-shadow: 5px 3px 5px black;
+    border-radius: 20px;
 }
 
 div#image {
