@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-:root {
-}
+:root {}
 
 * {
     padding: 0px;
@@ -9,6 +8,108 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+    background: black url('../images/landscape.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* div {
+    border: 2px solid red;
+} */
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    width: 60vw;
+    height: 80dvh;
+    position: absolute;
+
+    background-color: aqua;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#image {
+    flex: 1;
+    /* height: 30vh; */
+    background: black url('../images/city.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+div#iform {
+    flex: 1;
+    padding-top: 4dvh;
+    padding-bottom: 4dvh;
+    background-color: white;
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    border-radius: 0px 0px 20px 20px;
+}
+
+div#iform input[type=text], input[type=password] {
+    border: 2px solid rgb(207, 207, 207);
+    background-color: rgb(235, 235, 235);
+    width: 90%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    border-radius: 20px;
+}
+
+div#iform p {
+    margin-bottom: 10px;
+}
+
+div#iform form {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+div#divInputs {
+    display: flex;
+}
+
+div#ilabels {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 40%;
+    
+    justify-content: space-around;
+    padding-right: 15px;
+}
+
+div#iinputs {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+}
+
+input[type='button'] {
+    margin-top: 10px;
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(209, 209, 209);
+    font-weight: bold;
+}
+
+input[type='button']:hover {
+    transition: .1s;
+    color: white;
+    background-color: black;
 }
