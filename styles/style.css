@@ -8,7 +8,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     height: 100vh;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,23 +25,21 @@ body {
 } */
 
 section {
-    display: flex;
-    flex-direction: column;
-
-    width: 60vw;
-    height: 80dvh;
     position: absolute;
-
-    background-color: aqua;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 80dvh;
+
+
 }
 
 div#image {
     flex: 1;
-    /* height: 30vh; */
     background: black url('../images/city.jpg') no-repeat center center;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
@@ -52,13 +51,11 @@ div#iform {
     padding-bottom: 4dvh;
     background-color: white;
     text-align: center;
-    /* align-items: center; */
-    /* justify-content: center; */
-
     border-radius: 0px 0px 20px 20px;
 }
 
-div#iform input[type=text], input[type=password] {
+div#iform input[type=text],
+input[type=password] {
     border: 2px solid rgb(207, 207, 207);
     background-color: rgb(235, 235, 235);
     width: 90%;
@@ -86,7 +83,6 @@ div#ilabels {
     flex-direction: column;
     text-align: right;
     width: 40%;
-    
     justify-content: space-around;
     padding-right: 15px;
 }

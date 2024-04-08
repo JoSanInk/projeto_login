@@ -1,27 +1,30 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px){ /* tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* tablets */
     section {
-        display: flex;
         flex-direction: row;
         width: 80vw;
-        height: 40vh;
+        height: 50vh;
     }
 
     div#image {
-        height: 40vh;
+        flex: 1;
         width: 30vw;
         border-radius: 20px 0px 0px 20px;
     }
-    
+
     div#iform {
-        padding-top: 25px;
-        height: 40vh;
+        flex: 2;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
         width: 90vw;
         border-radius: 0px 20px 20px 0px;
     }
 
-    div#iform input[type=text], input[type=password] {
+    div#iform input[type=text],
+    input[type=password] {
         width: 90%;
     }
 
@@ -32,12 +35,19 @@
     div#ilabels {
         width: 45%;
     }
+
+    div#divInputs {
+        height: 20%;
+    }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px){ /* desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    /* desktop */
 
+    
 }
 
-@media screen and (min-width: 1200px){ /* telas grandes */
+@media screen and (min-width: 1200px) {
+    /* telas grandes */
 
 }
