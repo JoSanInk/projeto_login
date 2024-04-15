@@ -7,6 +7,8 @@
     <title>new login | </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -18,8 +20,23 @@
                 <h1>login</h1>
                 <p>seja bem vinda(o) de volta! faça login para acessar sua conta e
                     poder fazer configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
 
+                    <div id="campo">
+                        <span class="material-symbols-outlined">mail</span>
+                        <input type="text" name="login" id="ilogin" placeholder="Seu E-mail" autocomplete="email"
+                            required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+
+                    <div id="campo">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" name="senha" id="isenha" placeholder="********"
+                            autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#" target="_blank">esqueci minha senha</a>
                 </form>
             </div>
         </section>
